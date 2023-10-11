@@ -1,0 +1,272 @@
+html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+body{
+    background: #080808;
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/384543489_1002947167644602_8998082646559089206_n.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 10;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 0px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #1e00ff;
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    transition: all 0.3s
+}
+nav ul li a:hover::after{
+    width: 100%;
+    left: 0;
+}
+.header-text h1{
+    font-size: 150px;
+    margin-top: 200px;
+    margin-left: 100px;
+}
+.header-text h1 span{
+    color: #1e00ff;
+}
+#profile{
+
+    color: #d8d8d8;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 90%;
+    border-radius: 200px;
+    margin-left: 100px;
+}
+.about-col-2{
+    flex-basis: 55%;
+}
+.sub-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+    font-weight: 600;
+    color: #fff;
+    margin: 20px;
+}
+.tab-title{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.M{
+    font-size: 20px;
+}
+.tab-link{
+    margin-right: 50px;
+    font-size: 40px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-link::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #1e00ff;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-link.active-link::after{
+    width: 70%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 30px;
+    font-size: 30px;
+}
+.tab-contents ul li span{
+    color: #1e00ff;
+    font-size: 30px;
+    font-family:'Poppins';
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+* {box-sizing:border-box}
+.slideshow-container {
+  max-width: 1100px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #1e00ff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: hsl(242, 98%, 58%);
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+#certificates{
+    padding: 50px 0;
+    margin: 30px;
+}
+.certificates-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 100px;
+    margin-top: 50px;
+}
+.certificates{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.certi img{
+    width: 100%;
+    border-radius: 30px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#1e00ff);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer p{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.certi:hover img{
+    transform: scale(1.2);
+}
+.certi:hover .layer{
+    height: 100%;
+}
+.row{
+    margin-top: 100px;
+}
+.sub-title1{
+    margin-top: 40px;
+    font-size: 80px;
+}
+.social-icons{
+    font-size: 40px;
+}
+.social-icons i{
+    color: #1e00ff;
+    font-size: 75px;
+    margin: 20px;
+}
