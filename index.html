@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naphat's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" 
+    rel="stylesheet">
+</head>
+<body>
+<!-- หัวข้อ Home -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul>
+                <!-- ปุ่มนำทางไปสู่เนื้อหาส่วนต่างๆ -->
+                <li><a href="#header">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- เนื้อหาส่วน Home -->
+        <div class="header-text">
+            <h1><span>Naphat</span>'s <br> Portfolio</h1>
+        </div>
+    </div>
+</div>
+<!-- ส่วน Profile -->
+<div id="profile">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <!-- รูป -->
+                <img src="images/25430101-IMG_6062 - สำเนา.JPG" width="500px">
+            </div>
+                <div class="about-col-2">
+                    <!-- เนื้อหาส่วน about me -->
+                <h1 class="sub-title">About me</h1>
+                 <!-- เนื้อหา about me -->
+                <p class="M">Hi! my name is Naphat Tongthairthong.
+                   I am a student from Bangkapi school.
+                   <br>I interest in computer since I was a 13 years old.I decided to start progamming 
+                   <br>a website because i want to be a programmer.
+                   I hope this website that i create 
+                   <br>will show you that i have the talents and skills to program websites.</p>
+                   <div class="tab-title">
+                     <!-- แทบ Personal infomation -->
+                     <p class="tab-link active-link" onclick="opentab('personal', event)">Personal information</p>
+                     <!-- แทบ Skills -->
+                     <p class="tab-link" onclick="opentab('skills', event)">Skills</p>
+                     <!-- แทบ Education -->
+                     <p class="tab-link" onclick="opentab('education', event)">Education</p>
+                 </div>
+                     <div class="tab-contents active-tab" id="personal">
+                         <ul>
+                             <!-- เนื้อหาในแทบ Personal infomations -->
+                             <li><span>Name :</span> Naphat Tongthiarthong</li>
+                             <li><span>Nickname :</span> Champ</li>
+                             <li><span>Date of birth :</span> 12 July 2006</li>
+                             <li><span>Age :</span> 17</li>
+                             <li><span>Address :</span> 590 Senavilla84,Happyland Road,<br>Khlong Chan,Bangkapi,Bangkok 10240</li>
+                     </ul>
+                </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <!-- เนื้อหาในแทบ Skills -->
+                           <li><i class="fa-brands fa-python"><span>  Python (High-average)</span></i></li>
+                           <li><i class="fa-brands fa-html5"><span>  Html5 (High-average)</span></i></li>
+                           <li><i class="fa-brands fa-css3-alt"><span>  Css3 (average)</span></i></li>
+                           <li><i class="fa-brands fa-square-js"><span>  Javascript (Basic)</span></i></li>
+                           <li><img src="images/csharp_plain_logo_icon_146577.png" width="25px"><span>  C# (Novic)</span></li>
+                           <li><img src="images/Visual_Studio_Code_1.35_icon.svg.png" width="25px"><span>  Visual Studio Code</i></li>
+                        </ul>
+                    </div>
+                 <div class="tab-contents" id="education">
+                    <ul>
+                        <!-- เนื้อหาในแทบ Education -->
+                        <li><span>2553-2555</span><br><img src="images/ตราโรงเรียนหนองม่วงวิทยา.png" width="25px">  Nongmuangwittaya School</li>
+                        <li><span>2556-2561 </span><br><img src="images/375214707_311665581447368_6414704276224432597_n.png" width="25px">  Naratippittaya School</li>
+                        <li><span>2562-2564 </span><br><img src="images/s0EtN2.png" width="25px">  Bangkapi school</li>
+                        <li><span>2565-Current </span><br><img src="images/s0EtN2.png" width="25px">  Bangkapi school</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ส่วน Activities -->
+<div id="activities">
+    <div class="slideshow-container">
+        <!-- หัวข้อ Activities -->
+        <h1 class="sub-title">Activities</h1>
+         <!-- รูปภาพและเนื้อหา Activities -->
+            <div class="mySlides fade">
+                <img src="images/385531089_351433563891035_2891687337845427497_n.jpg" style="width:100%">
+                <div class="text">เป็นสตาฟจัดกิจกรรมงานสัปดาห์วันวิทยาศาสตร์ หัวข้อ BCG ฐาน Green energy
+                    <br>ได้ฝึกทักษะการพูด การทำงานเป็นทีมและการกล้าแสดงออก
+                    <br>วันที่ 22 สิงหาคม 2566</div>
+              </div>
+              <div class="mySlides fade">
+                <img src="images/380320556_181928458218835_7995197850601396210_n.jpg" style="width:100%">
+                <div class="text">เข้าร่วมกิจกรรม “Web Programming towards Metaverse”
+                    <br>จัดโดยสถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง 
+                    <br>ได้ฝึกการเขียนเว็บด้วยภาษา html
+                    <br>วันที่ 19 สิงหาคม 2566</div>
+              </div>
+              <div class="mySlides fade">
+                <img src="images/373485854_642724931295360_6062116757113008356_n.jpg" style="width:100%">
+                <div class="text">เข้าร่วมการแข่งขัน Quizscience วิทยาศาสตร์สุดขอบโลก
+                    <br>ช่วยส่งเสริมพัฒนาทักษะการคิดและได้ทบทวนบทเรียน
+                    <br>วันที่ 4 สิงหาคม 2566</div>
+              </div>
+              <div class="mySlides fade">
+                <img src="images/384537515_259696270378545_3214261551146547223_n.jpg" style="width:100%">
+                <div class="text">เข้าร่วมการแข่งขัน จรวดขวดน้ำ ประเภทความแม่นยำ
+                    <br>ได้ฝึกทักษการทำงานเป็นทีมและการแก้ปัญหาเฉพาะหน้า
+                    <br>วันที่ 8 สิงหาคม 2566</div>
+              </div>
+              <div class="mySlides fade">
+                <img src="images/385545086_629420949390686_7713703782415734272_n.jpg" style="width:100%">
+                <div class="text">เข้าร่วมกิจกรรม “Computer Engineering and Data Science”
+                    <br>จัดขึ้นโดย Change Education 
+                    <br>ได้ฝึกเขียนแผนภาพ graph ด้วย python
+                    <br>ณ วันที่ 17 กันยายน 2566</div>
+              </div>
+              <div class="mySlides fade">
+                <img src="images/380747357_1059523118407795_8773493145577089271_n.jpg" style="width:100%">
+                <div class="text">เข้าร่วมการแข่งขัน รถพลังยาง
+                    <br>ได้ฝึกทักษการทำงานเป็นทีม,การแก้ปัญหาเฉพาะหน้า,การลองผิดลองถูก
+                    <br>วันที่ 8 สิงหาคม 2566</div>
+              </div>
+              <!-- previuos and next bottons-->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <!-- dot -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+    </div>
+</div>
+<!-- ส่วน Certificates -->
+<div id="certificates">
+    <div class="container">
+        <div class="Certificates">
+            <!-- หัวข้อ Certificates -->
+            <h1 class="sub-title">Certificates</h1>
+            <div class="certificates-list">
+                <!-- รูปและคำบรรยายใบ Certificates -->
+                <div class="certi">
+                    <img src="images/cert1.jpg" width="400">
+                    <div class="layer">
+                        <p>ได้รับจากการเป็นสตาฟจัดกิจกรรมงานสัปดาห์วันวิทยาศาสตร์ หัวข้อ BCG ฐาน Green energy</p>
+                    </div>
+                </div>
+                <div class="certi">
+                    <img src="images/Certificates chula.png" width="400">
+                    <div class="layer">
+                        <p>ได้ผ่านการเรียนออนไลน์ในรายวิชา การสร้างต้นแบบแอปพลิเคชั่น โดยจุฬาลงกรณ์มหาวิทยาลัย</p>
+                    </div>
+                </div>
+                <div class="certi">
+                    <img src="images/certi3.jpg" width="400">
+                    <div class="layer">
+                        <p>ได้รับจากการเป็นสตาฟช่วยการแข่งขัน จรวดขวดน้ำประเภทระยะไกล</p>
+                    </div>
+                </div>
+                <div class="certi">
+                    <img src="images/certi4.jpg" width="400">
+                    <div class="layer">
+                        <p>ได้รับจากการเป็นสตาฟช่วยการแข่งขัน gold finger</p>
+                    </div>
+                </div>
+                <div class="certi">
+                    <img src="images/Certificates Ai.jpg" width="400">
+                    <div class="layer">
+                        <p>ได้ผ่านการเรียนออนไลน์ในรายวิชา การเขียนโปรแกรมพื้นฐานสำหรับ AI โดยสำนักงานปลัดกระทรวงการอุดมศึกษาวิทยาศาสตร์ วิจัยและนวัฒกรรม</p>
+                    </div>
+                   </div>
+                   <div class="certi">
+                    <img src="images/certificate_Key_Web_Programming_นภัทร  ทองเที่ยงตรง_48063.png" width="400">
+                    <div class="layer">
+                        <p>ได้จากการเข้าร่วมกิจกรรม Web Programming towards Metaverse โดยสถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
+                    </div>
+                 </div>
+                 <div class="certi">
+                    <img src="images/Screenshot 2023-09-08 194932.png" width="400">
+                    <div class="layer">
+                        <p>ได้ผ่านการเข้าร่วมกิจกรรมอบรม หัวข้อ Smart city และ Digital and Ai โดยสถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
+                    </div>
+                 </div>
+                 <div class="certi">
+                    <img src="images/Screenshot 2023-10-03 174919.png" width="400">
+                    <div class="layer">
+                        <p>ได้ผ่านการเข้าร่วมกิจกรรมค่ายพัฒนาทักษะ Computer Engineering and Data Science</p>
+                    </div>
+             </div>
+             <div class="certi">
+                <img src="images/Screenshot 2023-10-11 183220.png" width="400">
+                <div class="layer">
+                    <p>ได้ผ่านการเข้าร่วมกิจกรรมค่ายพัฒนาทักษะ Basic Computer Enginneering</p>
+                </div>
+             </div>
+             <div class="certi">
+                <img src="images/369572567_979753186659600_224802574955019411_n.png" width="400">
+                <div class="layer">
+                    <p>ได้ผ่านการเรียนออนไลน์ในรายวิชา การเขียนโปรแกรมคอมพิวเตอร์พื้นฐาน โดยมหาวิทยาลัยมหิดล</p>
+                </div>
+             </div>
+    </div>
+</div>
+<!-- ส่วน Contact -->
+<div id="contact">
+    <div class="container1">
+        <div class="row">
+            <!-- หัวข้อ Contact -->
+            <h1 class="sub-title1">My Contact
+                <div class="social-icons">
+                    <!-- ที่อยู่ปัจจุบัน -->
+                    <a href="https://maps.app.goo.gl/gqcViha1u5NdeSir8"><i class="fa-solid fa-house-user"></i></a>
+                    590 เสนาวิลล่า84 ถนนแฮปปี้แลนด์ แขวงคลองจั่น 
+                    เขตบางกะปิ กรุงเทพมหานคร 10240
+                    <!-- เบอร์โทรศัพท์ -->
+                    <br><i class="fa-solid fa-phone"></i> 0641453533
+                    <!-- Email -->
+                    <br><i class="fa-regular fa-envelope"></i>  champ12udo@gmail.com
+                    <!-- Facebook -->
+                    <br><a href="https://www.facebook.com/profile.php?id=100013925442334"><i class="fa-brands fa-facebook"></i></a> นภัทร ทองเที่ยงตรง
+                    <!-- หัวข้อ Profile -->
+                    <br><a href="https://github.com/KaiJakle"><i class="fa-brands fa-github"></i></a> https://github.com/KaiJakle
+                </div>
+            </h1>
+        </div>
+    </div>
+</div>
+
+<script>
+    // function สำหรับ Personal infomation,SkillsและEducation เพื่อซ้อนและโชว์
+function opentab(tabname, event) {
+    var tablinks = document.getElementsByClassName("tab-link");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    for (var i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active-link");
+    }
+    for (var i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+//ลูกเล่นใน Slides show
+//กำหนด slideIndex = 1
+    var slideIndex = 1;
+showSlides(slideIndex);
+// function สำหรับกดเปลี่ยน slides
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+// function สำหรับ dot เปลี่ยน slides
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+// function Slide show สำหรับเปลี่ยนหน้าและ dot
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    //slideIndex -1 = 0 รูปที่หนึ่ง
+    //slideIndex +0 = 1 รูปที่สอง
+    //slideIndex +1 = 2 รูปที่สาม
+    //slideIndex +2 = 3 รูปที่สี่
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
+
+</script>
+</body>
+</html>
